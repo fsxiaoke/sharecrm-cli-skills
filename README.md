@@ -7,19 +7,19 @@
 如果你只想先把 `sharecrm` skill 装起来，优先使用下面任一方式：
 
 ```bash
-npx skills add emengs/sharecrm-cli-skills --skill sharecrm -g -y
+npx skills add fsxiaoke/sharecrm-cli-skills --skill sharecrm -g -y
 ```
 
 macOS / Linux：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/emengs/sharecrm-cli-skills/main/scripts/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/fsxiaoke/sharecrm-cli-skills/main/scripts/install.sh | sh
 ```
 
 Windows PowerShell：
 
 ```powershell
-irm https://raw.githubusercontent.com/emengs/sharecrm-cli-skills/main/scripts/install.ps1 | iex
+irm https://raw.githubusercontent.com/fsxiaoke/sharecrm-cli-skills/main/scripts/install.ps1 | iex
 ```
 
 注意：`https://github.com/.../scripts/install.sh` 是 GitHub 页面地址，不是
@@ -29,11 +29,11 @@ irm https://raw.githubusercontent.com/emengs/sharecrm-cli-skills/main/scripts/in
 如果你要指定 agent 安装目标，可以使用：
 
 ```bash
-npx skills add emengs/sharecrm-cli-skills --skill sharecrm --agent claude-code -g -y
-npx skills add emengs/sharecrm-cli-skills --skill sharecrm --agent codex -g -y
-npx skills add emengs/sharecrm-cli-skills --skill sharecrm --agent gemini-cli -g -y
-npx skills add emengs/sharecrm-cli-skills --skill sharecrm --agent openclaw -g -y
-npx skills add emengs/sharecrm-cli-skills --skill sharecrm --agent cursor -g -y
+npx skills add fsxiaoke/sharecrm-cli-skills --skill sharecrm --agent claude-code -g -y
+npx skills add fsxiaoke/sharecrm-cli-skills --skill sharecrm --agent codex -g -y
+npx skills add fsxiaoke/sharecrm-cli-skills --skill sharecrm --agent gemini-cli -g -y
+npx skills add fsxiaoke/sharecrm-cli-skills --skill sharecrm --agent openclaw -g -y
+npx skills add fsxiaoke/sharecrm-cli-skills --skill sharecrm --agent cursor -g -y
 ```
 
 安装完成后：
@@ -43,7 +43,7 @@ npx skills add emengs/sharecrm-cli-skills --skill sharecrm --agent cursor -g -y
 3. 直接发起一个 `sharecrm` 相关请求，确认 agent 能读取该 skill
 
 脚本安装器的完整参数、默认目录和测试方式见
-[scripts/README.md](/Users/zengwenwen/Documents/github/sharecrm-cli-skills/scripts/README.md)。
+[scripts/README.md](/sharecrm-cli-skills/scripts/README.md)。
 
 ## 项目目标
 
@@ -111,11 +111,11 @@ npx skills add emengs/sharecrm-cli-skills --skill sharecrm --agent cursor -g -y
 
 仓库内置了两套一键安装脚本：
 
-- macOS / Linux：[scripts/install.sh](/Users/zengwenwen/Documents/github/sharecrm-cli-skills/scripts/install.sh)
-- Windows PowerShell：[scripts/install.ps1](/Users/zengwenwen/Documents/github/sharecrm-cli-skills/scripts/install.ps1)
+- macOS / Linux：[scripts/install.sh](https://github.com/fsxiaoke/sharecrm-cli-skills/tree/main/scripts/install.sh)
+- Windows PowerShell：[scripts/install.ps1](https://github.com/fsxiaoke/sharecrm-cli-skills/tree/main/scripts/install.ps1)
 
 如果你只想查看安装脚本本身的用法，可以直接看
-[scripts/README.md](/Users/zengwenwen/Documents/github/sharecrm-cli-skills/scripts/README.md)。
+[scripts/README.md](https://github.com/fsxiaoke/sharecrm-cli-skills/tree/main/scripts/README.md)。
 
 它们的目标是一致的：
 
@@ -125,7 +125,7 @@ npx skills add emengs/sharecrm-cli-skills --skill sharecrm --agent cursor -g -y
 - 安装完成后输出下一步验证提示
 
 详细参数、默认目录、备份行为和测试命令统一放在
-[scripts/README.md](/Users/zengwenwen/Documents/github/sharecrm-cli-skills/scripts/README.md)。
+[scripts/README.md](https://github.com/fsxiaoke/sharecrm-cli-skills/tree/main/scripts/README.md)。
 
 ### 兼容性总览
 
@@ -145,12 +145,12 @@ npx skills add emengs/sharecrm-cli-skills --skill sharecrm --agent cursor -g -y
 skill。官方 CLI 当前更推荐显式写出仓库和 skill 名：
 
 ```bash
-npx skills add emengs/sharecrm-cli-skills --skill sharecrm -g -y
+npx skills add fsxiaoke/sharecrm-cli-skills --skill sharecrm -g -y
 ```
 
 参数说明：
 
-- `emengs/sharecrm-cli-skills`：GitHub 仓库
+- `fsxiaoke/sharecrm-cli-skills`：GitHub 仓库
 - `--skill sharecrm`：安装仓库中的 `skills/sharecrm`
 - `-g`：安装到当前用户的全局技能目录
 - `-y`：跳过交互确认
@@ -165,19 +165,19 @@ npx skills --help
 
 ```bash
 # Claude Code
-npx skills add emengs/sharecrm-cli-skills --skill sharecrm --agent claude-code -g -y
+npx skills add fsxiaoke/sharecrm-cli-skills --skill sharecrm --agent claude-code -g -y
 
 # Codex
-npx skills add emengs/sharecrm-cli-skills --skill sharecrm --agent codex -g -y
+npx skills add fsxiaoke/sharecrm-cli-skills --skill sharecrm --agent codex -g -y
 
 # Gemini CLI
-npx skills add emengs/sharecrm-cli-skills --skill sharecrm --agent gemini-cli -g -y
+npx skills add fsxiaoke/sharecrm-cli-skills --skill sharecrm --agent gemini-cli -g -y
 
 # OpenClaw
-npx skills add emengs/sharecrm-cli-skills --skill sharecrm --agent openclaw -g -y
+npx skills add fsxiaoke/sharecrm-cli-skills --skill sharecrm --agent openclaw -g -y
 
 # Cursor
-npx skills add emengs/sharecrm-cli-skills --skill sharecrm --agent cursor -g -y
+npx skills add fsxiaoke/sharecrm-cli-skills --skill sharecrm --agent cursor -g -y
 ```
 
 如果你想本地开发并持续修改 skill，`npx` 安装通常不如手动软链接
@@ -188,7 +188,7 @@ npx skills add emengs/sharecrm-cli-skills --skill sharecrm --agent cursor -g -y
 先获取仓库：
 
 ```bash
-git clone https://github.com/emengs/sharecrm-cli-skills.git
+git clone https://github.com/fsxiaoke/sharecrm-cli-skills.git
 cd sharecrm-cli-skills
 ```
 
@@ -405,7 +405,7 @@ globs:
 
 当前仓库已经适合作为公开分发源：
 
-- 仓库地址：`https://github.com/emengs/sharecrm-cli-skills`
+- 仓库地址：`https://github.com/fsxiaoke/sharecrm-cli-skills`
 - skill 目录：`skills/sharecrm`
 - 入口文件：`skills/sharecrm/SKILL.md`
 
@@ -436,17 +436,17 @@ git push origin main --tags
 安装命令示例：
 
 ```bash
-npx skills add emengs/sharecrm-cli-skills --skill sharecrm -g -y
+npx skills add fsxiaoke/sharecrm-cli-skills --skill sharecrm -g -y
 ```
 
 如果你希望用户安装到特定 agent，可以显式指定：
 
 ```bash
-npx skills add emengs/sharecrm-cli-skills --skill sharecrm --agent claude-code -g -y
-npx skills add emengs/sharecrm-cli-skills --skill sharecrm --agent codex -g -y
-npx skills add emengs/sharecrm-cli-skills --skill sharecrm --agent gemini-cli -g -y
-npx skills add emengs/sharecrm-cli-skills --skill sharecrm --agent openclaw -g -y
-npx skills add emengs/sharecrm-cli-skills --skill sharecrm --agent cursor -g -y
+npx skills add fsxiaoke/sharecrm-cli-skills --skill sharecrm --agent claude-code -g -y
+npx skills add fsxiaoke/sharecrm-cli-skills --skill sharecrm --agent codex -g -y
+npx skills add fsxiaoke/sharecrm-cli-skills --skill sharecrm --agent gemini-cli -g -y
+npx skills add fsxiaoke/sharecrm-cli-skills --skill sharecrm --agent openclaw -g -y
+npx skills add fsxiaoke/sharecrm-cli-skills --skill sharecrm --agent cursor -g -y
 ```
 
 `skills.sh` 的一个关键点是：skill 不需要单独“上传”到一个独立仓库。
