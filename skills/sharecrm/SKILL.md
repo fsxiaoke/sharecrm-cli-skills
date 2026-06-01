@@ -8,7 +8,7 @@ metadata:
   version: "1.1.0"
   requires:
     bins: ["sharecrm"]
-  cliHelp: "sharecrm data -h"
+  cliHelp: "sharecrm -h"
 ---
 
 # 纷享销客全产品 Skill
@@ -50,7 +50,7 @@ metadata:
 | `flow`         | 流程：流程创建，流程查询，流程修改，流程删除                  | `sharecrm  flow -h`         |                                          |
 | `data`         | 对象与数据：CRM通用对象数据操作，包括查询，新建，编辑，根据SQL查询等   | `sharecrm  data -h`         | [data.md](./references/products/data.md) |
 | `describe`     | 对象描述：CRM对象描述的基本操作，包括查询对象ApiName，查询对象描述等 | `sharecrm  contact -h`      |                                          |
-| `file`         | 文件与网盘：                                  | `sharecrm  file -h`         |                                          |
+| `file`         | 文件：对象文件上传                                  | `sharecrm  file -h`         | [fileUpload.md](./references/fileUpload.md)                                         |
 | `utility`      | 通用函数：                                   | `sharecrm  utility -h`      |                                          |
 | `work`         | 日程任务：                                   | `sharecrm  work -h`         |                                          |
 | `tag`          | 标签：                                     | `sharecrm  tag -h`          |                                          |
